@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css" />
+  <h1 id="title">Survey Form</h1>
+</head>
+<body>
+  <form id="survey-form">
+      <p id="description">The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in ...</p>
+      <label for="name" id="name-label">
+        Name <input id="name" type="text" placeholder="Enter your name" required>
+      </label>
+      <label for="email" id="email-label">
+        Email <input id="email" type="email" placeholder="Enter your Email" required>
+      </label>
+      <label for="number" id="number-label">
+        Age <input id="number" type="number" min="5" max="120" placeholder="Age" required>
+      </label>
+      <label for="role" id="role-label">
+        Which option best descrives your current fitness level?<select id="dropdown" placeholder="Select current role">
+        <option value="">(select one)</option>
+        <option value="1">Couch potato</option>
+        <option value="2">Out of shape</option>
+        <option value="3">In shape</option>
+        <option value="4">Super human</option>
+      </select>
+    </label>
+    <fieldset>
+      <legend>Would you take the FitnessGram™ Pacer Test again?</legend>
+      <label for="definitely"><input id="definitely" type="radio" name="would" value="definitely" class="inline" checked>Definitely</label>
+      <label for="maybe"><input id="maybe" type="radio" name="would" value="maybe" class="inline">Sure maybe</label>
+      <label for="no"><input id="no" type="radio" name="would" value="no" class="inline">No way bro</label>
+    </fieldset>
+    <fieldset>
+      <legend>What's your favorite activity?</legend>
+      <label for="eating"><input id="eating" type="checkbox" name="activity" value="eating" class="inline">Eating</label>
+      <label for="sleeping"><input id="sleeping" type="checkbox" name="activity" value="sleeping" class="inline">Sleeping</label>
+      <label for="working_studying"><input id="working_studying" type="checkbox" name="activity" value="working_studying" class="inline">Working/studying</label>
+      <label for="being_active"><input id="being_active" type="checkbox" name="activity" value="being_active" class="inline">Being active</label>
+    </fieldset>
+    <label for="textarea">Additional comments:<textarea id="textarea" rows="3" cols="30" placeholder="Students run back and forth as many times as they can, each lap signaled by a beep sound."></textarea></label>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
